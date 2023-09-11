@@ -1,35 +1,35 @@
-# Active-Directory-Lab
-## Downloaded VMware, Windows Server 2019 ISO, and Windows 10 Enterprise ISO from their websites and installed VMware.<br>
+## Active-Directory-Lab
+## Downloaded VMware workstation player, Windows Server 2019 ISO, and Windows 10 Enterprise ISO from their websites and installed VMware onto my computer.<br>
 ![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/14165504-a721-4c69-801b-07803518fa0e)
 ![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/1d2baae9-fe29-4a55-a204-9f4e56462eca) 
 ![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/e104bf42-998e-4b72-919b-4bc9ba7f7c6c)
-### Explanation: For all 3 steps I navigated to my browser and searched VMware and Microsoft website for ISO Files and VMware workstation Player files and downloaded them also running the installation for VMware Workstation Player. This will allow me to start installing the virtual machines with VMware and begin my lab environment.
+## Explanation: For all 3 downloads I navigated to google chrome and searched VMware and Microsoft eval center website for VMware workstation Player, Windows Server 2019 ISO and Windows 10 Enterprise ISO. I downloaded the files and then ran the VMware installation. This will allow me to start installing the virtual machines with VMware and begin my Active Directory Lab environments.
 
-# Created virtual machine for Windows Server 2019 ISO
-- #### Opened VMware software and clicked create a new virtual machine.<br>
+## Created virtual machine for Windows Server 2019 ISO
+- ### To create a virtual machine I opened VMware and clicked on Create a New Virtual Machine. .<br>
 ![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/acf34b63-8702-4662-9dec-2ebf1780fea5)
-- #### Selected I will install operating system later to use windows without a license because im only using this OS for my lab and testing.<br>
+- ### Selected I will install operating system later where I will put ISO file in after some steps.<br>
 ![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/f7a718cb-9e15-4999-962a-6e649c49753c)
-- #### Selected the correct Guest OS.<br>
+- ### Selected the correct Guest Operating System for the virtual machine I am creating.<br>
 ![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/0ef81030-0658-40b5-9ec1-93fed09d79be)
-- #### Named VM and provided location on my storage drive.<br>
+- ## Created a name for my virtual machine and I selected a location on my drive for the files.<br>
 ![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/db6fe610-474a-4fbb-9938-84fed13cc65f)
-- #### I selected 60 GB storage size and split virtual disk into multiple files just incase I plan to move it to another computer.<br>
+- ## I selected 60 GB storage size because thats all I need for this lab and selected Split virtual disk into multiple files if I ever want to move my VM to another computer.<br>
 ![5](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/609aca66-0d68-4a89-b975-11db0063a03f)
-- #### I left the hardware as default recommended for this lab and clicked finish.<br>
+- ## I decided to not change the hardware because it was enough for this lab.<br>
 ![6](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/a87d8dc6-0340-4732-b2c5-4278e0a64ed1)
-- #### selected my VM and pressed edit vm settings<br>
+- ## Selected my virtual machine from the VMware main page and pressed edit virtual machine settings.<br>
 ![7](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/4e59aa9e-360b-4ece-8eed-74cd64e74fb0)
-- #### Selected CD/DVD (SATA) and switched it to Use ISO image file and browsed my ISO file for Windows Server 2019. Then went back to my VM and powered it on.<br>
+- ## Selected CD/DVD (SATA) and switched it to Use ISO image file and browsed my ISO file for Windows Server 2019. Then went back to my virtual machine and powered it on.<br>
 ![8](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/3c449eef-fd67-4974-b81e-fbe7336b05f5)
-- #### Selected english and selected install.<br>
+- ## Selected english and pressed install to begin the Windows setup process.<br>
 ![9](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/ef98582e-4917-49de-9159-279909433e0e)
-- #### Selected Windows Server 2019 Standard Evaluation to have a GUI and accepted license terms screen.<br>
+- ## Selected Windows Server 2019 Standard Evaluation to have a GUI and accepted license terms message.<br>
 ![10](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/b9af7e4e-657f-4f23-8d93-23e29a72b3b9)
-- #### Selected Custom Install advanced and pressed next because I dont need to add more drives for this lab.<br>
+- ## Selected Custom Install advanced and pressed next because I dont need to add more drives for this lab.<br>
 ![11](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/4dd02055-dd45-4634-9956-7bc6d6a20400)<br>
 ![11](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/e7efdec8-43d8-48c9-b5f6-b86a1e3367cc)
-- ### Explanation: I created the Windows Server 2019 virtual machine using VMware's Virtual Machine wizard.
+- ## Explanation: I created the Windows Server 2019 virtual machine using VMware's Virtual Machine wizard. I also created two more virtual machines using the same steps except I changed the names and used Windows 10 Enterprise edition to add them for this lab. Having virtual machines set up will allow me to begin installing Active Directory and continue my lab.
 
 # Renamed Server Computer
 - #### Opened file explorer and right clicked this pc and opened properties.
