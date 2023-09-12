@@ -79,7 +79,38 @@
 ![17](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/e95a50ea-6df7-406c-8818-a97e022ff8a8)
 - #### I can see that the installation was a success.
 ![18](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/42f83dad-7588-4751-9d9c-5a052eb6c086)
+#### Explanation: Installing Active Directory will allow me to create users, organizational units, and configure Group Policy.
 
+### Assigning static IP Addresses to virtual machines.
+- #### Opened start menu and pressed Control Panel to adjust settings.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/508184ec-a1b8-431d-95d6-b2acd68983e9)
+- #### Pressed View network status and tasks under Network and Internet to open Network and Sharing Center.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/ccd5d3db-e4c3-4b99-afa3-40d955e37a2e)
+- #### Pressed Change adapter settings to see Network Connections.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/ea432fa0-11bd-476f-9609-fb01a6fbffc6)
+- #### Opened Ethernet0 Network and pressed properties to see items the connection is using.
+![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/f4e59024-e227-4a90-bd49-d2f092185213)
+- #### Selected Internet Protocol Version 4 TCP/IPv4 and pressed properties.
+![5](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/b66c70d8-5b11-4fb2-bfc0-350c8def471a)
+- #### Selected the Use the following IP address option and Use the following DNS server addresses and input static IP address.
+![6](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/2d00432d-0f32-4ba6-a9c5-660f5b8bcb0e)
+- #### Opened Virtual Machine Settings to select Network Adapter settings from NAT to Host-Only so there is no issues connecting to the domain.
+![7](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/b706a081-613a-4244-8e3a-6acba45a9d1f)
+#### Explanation: Assigning a static IP address to my virtual machines will allow me to connect them to the domain.
+
+### Adding virtual machines to the domain.
+- #### Opened File Explorer right clicked This PC and pressed properties to open System.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/a95e4a00-967c-4ed1-8044-1cdbb2727e3d)
+- #### Scrolled down and pressed Rename this PC (advanced) to open System Properties Computer Name tab.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/77905240-89cb-4d61-a45c-a6d0a1973969)
+- #### Pressed change to open Computer Name/Domain Changes.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/3c57f2ea-976a-47f4-a3a2-6dc6bfde4527)
+- #### Select Domain, type in domain name and press ok to connect to domain.
+![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/bf68a668-7cfe-4451-bde7-9e9518033d28)
+- #### I got a welcome message for connecting to domain.
+![5](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/9247e707-5430-4e6c-9b33-bdeaa0e9002f)
+- #### Opened Active Directory Users and Computers and under the Computers branch I can see the computer added to the domain.
+#### Explanation: Adding computers to my domain will allow me to configure group policy.
 
 
 
