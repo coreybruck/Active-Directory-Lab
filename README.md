@@ -157,6 +157,20 @@ Reviewed my selections and pressed finish to create user.
 Confirmed the Organizational Unit has been created by seeing it under coreylab forest.
 ![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/9e5ca857-3bcb-4909-8004-006bb29b3f50)
 
+## Creating a Security Group in Active Directory Users and Computers.
+- Opened Active Directory Users and Computers. Right clicked on users, selected new and pressed Group.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/35ccd331-483b-4a17-83c1-9d04ad19c5f9)
+- Named group and selected Security and pressed Ok.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/214ae764-dfc0-4486-859a-b60d8364042f)
+- Opened the security group properties.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/9cc3f145-cc60-42f3-a7c8-15071e83d24d)
+- Switch to Members tab and press add to select a user.
+![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/af59f95b-5303-4afe-99fd-21652c5a512c)
+- Added Helpdesk1 User to the Security Group pressed apply and OK.
+![5](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/a76eb9dc-60e4-409e-a5cb-c74be6c9b393)
+- Double checked User properties to see if it was in the member of section.
+![6](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/fbf4d2ab-1932-4db8-a689-35bdbb4676ac)
+
 ## Unlocking Account that has been locked out in Active Directory Users and computers.
 - I opened Active Directory Users and Computers and right clicked the user and pressed Enable Account.
 ![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/adad797e-701e-4441-ab00-29ae32f76255)
@@ -191,10 +205,78 @@ Confirmed the Organizational Unit has been created by seeing it under coreylab f
 - Used net user command to double check if account expiration has been updated.
 ![6](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/c10e5c60-f9a3-46d6-9902-44cbf994727d)
 
+## Reconnecting Computer that has fallen off the domain.
+- Deleted the computer to simulate the computer falling off the domain.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/0d5019a9-8327-4bea-b713-41abbb51014c)
+- Logged in to local Administrator account on the machine.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/c564548b-36d9-461f-baef-52ad36967036)
+- I reconnected the computer to the domain.
+![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/4f34ff59-17e1-4f4d-a4ad-c45bc7aa6cfa)
+- The computer is showing on the Computers section of my domain.
+![6](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/add3345b-6f70-4ec8-8b99-e26056a88d6b)
 
+## Creating share folder with Active Directory Server Manager.
+- Opened Server Manager and pressed File and Storage Services.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/d6dbdb9e-b4d8-4c04-88bc-c14742f265be)
+- Press Shares and in open space in shares right clicked and pressed New Share to open New Share Wizard.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/91fec839-9b9d-43c8-b0a0-5fd2ae61e865)
+- Selected SMB Share - Quick because it suits this lab good.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/d7f6d853-3b58-445b-985c-a43d55f50847)
+- Selected my server and the default path for this share folder. 
+![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/37eba796-8517-46c0-92c3-965322f78fd3)
+- Typed in the Share name and pressed Next.
+![5](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/85ec4e7e-791e-4fe7-9a3a-a19543632957)
+- Left the Allow caching of share checked to have access offline and pressed Next.
+![6](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/57c1ff73-3e0f-4555-9eac-d443647bf80e)
+- Left permissions default to change later on in lab and pressed Next.
+![7](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/10262497-37fb-42b8-b195-671430478e61)
+- Confirmed the selections and pressed Create.
+![8](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/a95b32bf-6738-4892-96cf-4ebb58e40670)
 
+## Creating share folder with File Explorer.
+- Opened This PC pressed Local Disk (C:) then pressed Shares folder I created. Opened new Brand folder properties.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/6dbe630b-0a58-4c17-9828-ab43cae3dca9)
+- In properties clicked Sharing tab and pressed Share.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/7276ffa6-0bb3-4e78-a66f-3768ca9e2d95)
+- In Network Access I added user I want to map this share folder to.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/a77f5e64-74cd-4d70-90e2-8f0422bc2a9a)
 
+## Mapping a Network Drive.
+- Opened File Explorer and pressed This PC and selected Map network drive...
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/9b478028-6182-4de2-94cb-054a1ea8de75)
+- Selected the drive letter and typed in network folder location checked Reconnect at sign-in and pressed finish.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/cadc976f-0a40-415f-95f8-5b340d4f613d)
+- File Explorer shows on This PC that my drive has been mapped.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/f3221b53-4c3b-4c89-8236-16d4a1793d6f)
 
+## Mapping a Network Drive in Active Directory Users and Computers.
+- Opened Active Directory Users and Computers from my pinned shortcut on taskbar and slected IT and opened user properties.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/28479b9e-0344-4e59-85ec-4398d10e832b)
+- In profile selected Connect P: drive and typed location of share folder then pressed Apply and OK.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/266a9168-d1d1-4daa-a9aa-2c3007930245)
+- Creating a mapped drive after user logs on next.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/5d15beea-ccb2-44ab-ab25-e66bc10172b6)
 
+## Remoting into second virtual machine computer using Remote Desktop Connection.
+- Searched for and opened Remote Desktop Connection on start menu.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/59968b17-3794-4aa5-a70b-6a896a1f17a8)
+- Typed in the second computer I wanted to remote into and pressed Connect.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/77210000-8b6f-4389-89ec-745680bab9ac)
+- Used my credentials to connect and pressed OK.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/347d631e-8bfd-44b6-8ab2-73f9b43af390)
+- From users computer pressed OK allowing the connection.
+![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/9f605b2d-618b-454b-a9a0-4f4dbcb82221)
+- Successfully remoted into the computer.
+![5](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/37550fac-e42a-4fcd-90d7-5f6c57b2acfa)
 
-
+## Changing Default Domain Policy settings in Group Policy Management.
+- Opened Server Manager selected Tools and opened Group Policy Management.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/c0881cd2-7ea2-4fe1-861c-2a889f5e5b03)
+- Opened Forest, Domains, coreylab and right clicked Default Domain Policy and pressed Edit.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/e9503a09-cf1b-40cc-af6e-1ec72d939149)
+- In Computer Configuration, Policies, Windows Settings, Security Settings, Account Policies, Account Lockout Policy edited Account Lockout Duration.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/4f800573-11fb-4b9a-b6d4-c1e841ff5b66)
+- Under Password Policy edited Maximum password age.
+![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/f1f0ca8d-e7fb-4572-ac8d-9ebf9afce9a4)
+- Right clicked on Default Domain Policy and checked Enforced on.
+![7](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/d151ccfe-c43e-476e-8978-626754d0443b)
