@@ -1,11 +1,11 @@
 # Active-Directory-Lab
-# Downloaded VMware workstation player, Windows Server 2019 ISO, and Windows 10 Enterprise ISO.<br>
+## Downloaded VMware Workstation Player, Windows Server 2019 ISO, and Windows 10 ISO.<br>
 ![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/8f24ebc7-26a1-4ba4-970a-1f7a9770e040)
 ![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/6c3369ce-23d9-4570-88dc-b80c013292e5)
 ![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/144bdbc8-11de-4fbd-8ace-5ac663a12243)
-Explanation: For all 3 downloads I navigated to google chrome and searched VMware and Microsoft eval center website for VMware workstation Player, Windows Server 2019 ISO and Windows 10 Enterprise ISO. I downloaded the files and then ran the VMware installation. This will allow me to start installing the virtual machines with VMware and begin my Active Directory Lab environments.
+For all 3 downloads I navigated to google chrome and searched VMware and Microsoft eval center website for VMware workstation Player, Windows Server 2019 ISO and Windows 10 Enterprise ISO. I downloaded the files and then ran the VMware installation. This will allow me to start installing the virtual machines with VMware and begin my Active Directory Lab environments.
 
-# Created virtual machines for Windows Server 2019 and Windows 10 Enterprise.
+## Created virtual machines for Windows Server 2019 and Windows 10 Enterprise.
 - To create a virtual machine I opened VMware and clicked on Create a New Virtual Machine. .<br>
 ![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/acf34b63-8702-4662-9dec-2ebf1780fea5)
 - Selected I will install operating system later where I will put ISO file in after some steps.<br>
@@ -29,9 +29,9 @@ Explanation: For all 3 downloads I navigated to google chrome and searched VMwar
 - Selected Custom Install advanced and pressed next because I dont need to add more drives for this lab.<br>
 ![11](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/4dd02055-dd45-4634-9956-7bc6d6a20400)<br>
 ![11](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/e7efdec8-43d8-48c9-b5f6-b86a1e3367cc)
-Explanation: I created the Windows Server 2019 virtual machine using VMware's Virtual Machine wizard. I also created two more virtual machines using the same steps except I changed the names and used Windows 10 Enterprise edition to add them for this lab. Having virtual machines set up will allow me to begin installing Active Directory and continue my lab.
+I created the Windows Server 2019 virtual machine using VMware's Virtual Machine wizard. I also created two more virtual machines using the same steps except I changed the names and used Windows 10 Enterprise edition to add them for this lab.
 
-# Renaming Computers
+## Renaming Computers.
 - Opened file explorer and right clicked this pc and clicked properties to see the system information.
 ![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/f9aebd5f-0d3e-44ae-90f8-37a412c0e3ed)
 - Opened change settings next to Computer name to open System Properties.
@@ -40,9 +40,9 @@ Explanation: I created the Windows Server 2019 virtual machine using VMware's Vi
 ![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/103dc7d2-a0e8-4e30-bdc7-0a4e1baee15d)
 - Typed in a different computer name and left this computer on Workgroup for now. Pressed ok and restarted computer.
 ![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/29b6f91b-64e1-4c02-90e4-9af92a033fa2)
-Explanation: I renamed the Windows server 2019 computer and the Windows 10 Enterprise computers as well with the same steps as above. This way it is more organized and easier to remember for reference.
+I renamed the Windows server 2019 computer and the Windows 10 Enterprise computers as well with the same steps as above.
 
-# Adding Active Directory with Add Roles and Features Wizard in Server Manager
+## Adding Active Directory with Add Roles and Features Wizard in Server Manager.
 - Opened Server Manager and pressed Manage and than pressed Add Roles and Features to open the Add Roles and Features Wizard.
 ![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/3bc28b3b-f7d3-4771-8822-8c4257a57c81)
 - Verified my Admin password strength, network settings, security updates and pressed next.
@@ -79,9 +79,8 @@ Explanation: I renamed the Windows server 2019 computer and the Windows 10 Enter
 ![17](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/e95a50ea-6df7-406c-8818-a97e022ff8a8)
 - I can see that the installation was a success.
 ![18](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/42f83dad-7588-4751-9d9c-5a052eb6c086)
-Explanation: Installing Active Directory will allow me to create users, organizational units, and configure Group Policy.
 
-# Assigning static IP Addresses to virtual machines.
+## Assigning static IP Addresses to virtual machines.
 - Opened start menu and pressed Control Panel to adjust settings.
 ![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/508184ec-a1b8-431d-95d6-b2acd68983e9)
 - Pressed View network status and tasks under Network and Internet to open Network and Sharing Center.
@@ -96,9 +95,8 @@ Explanation: Installing Active Directory will allow me to create users, organiza
 ![6](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/2d00432d-0f32-4ba6-a9c5-660f5b8bcb0e)
 - Opened Virtual Machine Settings to select Network Adapter settings from NAT to Host-Only so there is no issues connecting to the domain.
 ![7](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/b706a081-613a-4244-8e3a-6acba45a9d1f)
-Explanation: Assigning a static IP address to my virtual machines will allow me to connect them to the domain.
 
-# Adding virtual machines to the domain.
+## Adding virtual machines to the domain.
 - Opened File Explorer right clicked This PC and pressed properties to open System.
 ![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/a95e4a00-967c-4ed1-8044-1cdbb2727e3d)
 - Scrolled down and pressed Rename this PC (advanced) to open System Properties Computer Name tab.
@@ -110,7 +108,88 @@ Explanation: Assigning a static IP address to my virtual machines will allow me 
 - I got a welcome message for connecting to domain.
 ![5](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/9247e707-5430-4e6c-9b33-bdeaa0e9002f)
 - Opened Active Directory Users and Computers and under the Computers branch I can see the computer added to the domain.
-#### Explanation: Adding computers to my domain will allow me to configure group policy.
+
+## Enabling Administrator account.
+- Opened File Explorer and right clicked This PC and pressed Manage to open Computer Management.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/70320530-31a9-4a2a-9fae-51920c885af4)
+- Under Local Users and Groups selected Users to see list of users.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/8a0a0192-9551-40a6-a9d2-75236c839851)
+- Opened Administrator user and unchecked Account is disabled to be able to log in as Administrator.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/26304f0d-e047-4d30-a8f6-ea06290a872f)
+
+## Installing RSAT Tools to Helpdesk computer.
+Typed programs into search bar and opened Add or remove programs to open Apps and features.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/53945054-7fef-4b81-864b-802bb67c9370)
+Pressed Optional features.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/bbd93cdc-3544-4e15-b919-f9ae543cc242)
+Pressed Add a feature and searched for RSAT and selected the specific ones I need and started installation.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/5cea933a-5617-415f-8a51-6c82f81c67cb)
+
+## Creating Users in Active Directory Users and Computers.
+- Opened Active Directory Users and Computers from Server Manager Tools selection.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/3453f44a-2fd3-423d-9407-4e6bfd446c63)
+- Under coretlab.com and Users I right clicked open space and selected New and User from drop down.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/83b500f9-45b6-456e-b456-0434cf3f4d19)
+- Typed in name and logon info and pressed next.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/fe8217c6-3245-4dbe-9bc3-29db2ec1d045)
+- Created a password and checked user must change password at next logon and pressed next.
+![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/acc0770b-edaf-4024-8e3c-d561ed2f0a9e)
+Reviewed the selections I made and pressed finish.
+![5](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/df17aac6-58f8-4a29-ba61-0df190ddb36e)
+Confirmed the user has been created in users by seeing there name.
+![6](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/bb6e0664-6fec-46c2-ad12-c822383b9d11)
+
+## Copying User in Active Directory Users and Computers.
+- Opened Active Directory Users and Computers from shortcut pinned to taskbar. Selected a user to copy and right clicked and slected copy.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/9b75d112-42d1-4d80-8868-519e804bfe8d)
+Typed in a new name, logon, and pressed next.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/fc03a22a-388e-406d-95d0-3c5196359257)
+Set a password and pressed next.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/9e1c07e9-06c4-432f-8f61-1a8aee5c39a2)
+Reviewed my selections and pressed finish to create user.
+![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/b347eca9-a189-4c1a-9088-f5669bba9d2f)
+
+## Creating an organizational Unit in Active Directory Users and Computers.
+- Opened Active Directory Users and Computers. Right clicked my forest and selected new and pressed Organizational Unit.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/a2c8b5c5-e92f-40d4-ad67-bf5ea6e03aa2)
+- Named the Organizational Unit and pressed ok.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/da1d944b-bddb-4400-a428-7fc27887dec2)
+Confirmed the Organizational Unit has been created by seeing it under coreylab forest.
+![3](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/9e5ca857-3bcb-4909-8004-006bb29b3f50)
+
+## Unlocking Account that has been locked out in Active Directory Users and computers.
+- I opened Active Directory Users and Computers and right clicked the user and pressed Enable Account.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/adad797e-701e-4441-ab00-29ae32f76255)
+- Another way I unlocked account is in Active Directory Users and Computers and opening users properties.
+![2 2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/eebc5615-be6f-4c77-8dcb-f394c2781e29)
+- Pressing Account tab in properties and checking Unlock account and pressing ok to unlock account.
+![4 2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/2b31af1b-8043-4f4a-8d5b-7b5a8eeacb67)
+
+## Resetting user password in Active Directory Users and Computers.
+- Opened File Explorer right clicked the user and selected Reset Password.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/b3033ba3-3b26-4e64-92e3-6caeeaa54fe0)
+- Typed the new password. Selected user must change at next logon and pressed ok to reset password.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/1d205d16-0d47-466a-b13e-b3c3f6c93e38)
+- User typed in new temporary password.
+![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/9d589a0a-5ca4-42cc-9b34-aee9796d506e)
+- Pressed ok to password must be changed message.
+![5](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/2605308b-7ccc-4b28-8f58-6d8beba6006c)
+- Typed in old and new password to update password.
+![6](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/f48cc577-bcc8-4c1f-a049-5f0011a34f1b)
+- Password successfully changed.
+![7](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/12b30f97-c572-442d-84bd-626e7ca6c077)
+
+## Unlocking user account that has been expired in Active Directory Users and Computers.
+- User account has expired.
+![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/c69b285c-276f-4c9a-9a1a-db05e17e6a86)
+- Opened Active Directory Users and Computers and opened the users properties.
+![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/f5f47a5e-5bd1-424d-ad9b-47a5380b899d)
+- Opened the Account tab and account expired never option and selected apply and ok.
+![4](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/8a92c02a-4471-47f5-a99b-ee71efbfc878)
+- Searched cmd in start search and opened Command Prompt.
+![5](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/5e30db19-29e3-409e-9806-bffebfa9ca1e)
+- Used net user command to double check if account expiration has been updated.
+![6](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/c10e5c60-f9a3-46d6-9902-44cbf994727d)
 
 
 
