@@ -1,4 +1,4 @@
-# Active-Directory-Lab
+# Active-Directory-Windows-Lab
 ## Downloaded VMware Workstation Player, Windows Server 2019 ISO, and Windows 10 ISO.<br>
 ![1](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/8f24ebc7-26a1-4ba4-970a-1f7a9770e040)
 ![2](https://github.com/coreybruck/Active-Directory-Lab/assets/78772836/6c3369ce-23d9-4570-88dc-b80c013292e5)
